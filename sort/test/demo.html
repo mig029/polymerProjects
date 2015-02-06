@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+  <title>paper-card</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="../webcomponentsjs/webcomponents.js"></script>
+
+  <link rel="import" href="paper-card.html">
+  <link rel="import" href="../paper-button/paper-button.html">
+  <link rel="import" href="../core-icon-button/core-icon-button.html">
+
+  <style>
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 14px;
+    }
+
+    #cards {
+      margin: 0 auto;
+      background: #dedede;
+      overflow: auto;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
+
+    paper-card {
+      width: 380px;
+      margin: 8px auto;
+    }
+
+    paper-card [autofocus] {
+      color: #ff9c33;
+    }
+
+    paper-button {
+      font-size: 14px;
+    }
+
+    .fancy .round-placeholder {
+      display: inline-block;
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      background: #e9005f;
+      color: white;
+      line-height: 64px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .fancy .title {
+      position: absolute;
+      top: 30px;
+      left: 100px;
+    }
+
+    .fancy img {
+      width: 100%;
+    }
+
+    .fancy .big {
+      font-size: 22px;
+      padding: 8px 0 16px;
+      color: #888;
+    }
+
+    .fancy .medium {
+      font-size: 16px;
+      padding-bottom: 8px;
+    }
+
+  </style>
+
+</head>
+<body unresolved>
+
+  <div layout vertical center id="cards">
+
+	<!--
+    <paper-card heading="Not all cards need to be swipeable" disableSwipe></paper-card>
+
+    <paper-card>
+      <div content>
+        <div>Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+        </div>
+      </div>
+      <div actions>
+        <core-icon-button icon="favorite" title="favorite"></core-icon-button>
+        <core-icon-button icon="bookmark" title="bookmark"></core-icon-button>
+        <core-icon-button icon="cloud-upload" title="cloud-upload"></core-icon-button>
+      </div>
+    </paper-card>
+	-->
+    <paper-card heading="Lancaster" headingColor="#EAC117" image="ups_logo.png" style="background-color:#d2691e">
+      <div content >
+          <div class="medium"> 
+		  			<p style="color:#fff">
+
+		  PA 168-188,195,196 ALL <br />
+		  CAN ALL Ground
+		  </p>
+      </div>
+	  </div>
+	  <!--
+      <div actions>
+        <paper-button dismissive>No</paper-button>
+        <paper-button affirmative autofocus>Yes</paper-button>
+      </div>
+	  -->
+	    <paper-shadow class="card" z="3">
+	  &nbsp;
+	  </paper-shadow>
+    </paper-card>
+	
+    <paper-card heading="Richmond" headingColor="#EAC117" image="ups_logo.png" style="background-color:#bd5e1b"> 
+      <div content>
+          <div class="medium"> 		 
+		  			<p style="color:#fff">
+		  AL ALL (350-369) 2-Day, 3-Day, Ground<br />
+		  FL ALL (320-349) 2-Day, 3-Day, Ground <br />
+			GA ALL (310-319) 2-Day, 3-Day, Ground<br />
+			GA ALL 2-Day, 3-Day, Ground<br />
+			NC 270-279 2-Day, 3-Day, Ground<br />
+			VA 224-238 1-Day, 2-Day, 3-Day, Ground<br />
+			VA 239-246 1-Day, 2-Day, 3-Day, Ground<br />
+			</p>		
+		</div>		    
+		</div>
+		<paper-shadow class="card" z="3">
+	  &nbsp;
+	  </paper-shadow>
+		
+    </paper-card>
+	
+    <paper-card heading="Burtonsville, MD" headingColor="#EAC117" image="ups_logo.png" style="background-color:#a85418">
+      <div content>
+          <div class="medium"> 
+			<p style="color:#fff">
+				MA ALL (010-027) 2-Day, 3-Day, Ground<br />
+				RI ALL (028-029) 2-Day, 3-Day, Ground<br />
+				NH ALL (030-038) 2-Day, 3-Day, Ground<br />
+				ME ALL (039-049) Ground<br />
+				CT ALL (060-069) 2-Day, 3-Day, Ground<br />
+				VT ALL (050-059) 2-Day, 3-Day, Ground<br />
+				RI ALL 2-Day, 3-Day, Ground<br />
+				NY 103-109, 120-149 2-Day, 3-Day, Ground<br />
+				MD 207-209 1-Day, 2-Day, 3-Day, Ground<br />
+				NC 280-289 2-Day, 3-Day, Ground<br />
+				SC ALL (290-299) 2-Day, 3-Day, Ground<br />
+				TN ALL (370-385) 2-Day, 3-Day, Ground<br />
+				MS ALL (386-398) 3-Day, Ground<br />
+				LA ALL (700-714) 3-Day, Ground<br />
+				AR ALL (716-729) 3-Day, Ground<br />
+				UT ALL (840-847) Ground<br />
+				NV ALL (890-898) Ground<br />
+			</p>
+		</div>
+		</div>		
+			<paper-shadow class="card" z="3">
+	  &nbsp;
+	  </paper-shadow>
+    </paper-card>
+	
+		
+    <paper-card heading="Lawnside, NJ" headingColor="#EAC117" image="ups_logo.png" style="background-color:#934915">
+      <div content>
+          <div class="medium"> 
+			<p style="color:#fff">
+		 NJ ALL 1-Day, 2-Day, 3-Day, Ground<br />
+    NY 110-119 1-Day, 2-Day, 3-Day, Ground<br />
+    NY ALL 2-Day, 3-Day, Ground
+			</p>
+		</div>
+		</div>		
+    </paper-card>
+	
+    <paper-card heading="Baltimore, MD - 2129" headingColor="#EAC117" image="ups_logo.png" style="background-color:#7e3f12">
+      <div content>
+          <div class="medium"> 
+						<p style="color:#fff">
+
+				DE ALL (197-199) 1-Day, 2-Day, 3-Day, Ground<br />
+				DC All (200, 202-205) 1-Day, 2-Day, 3-Day, Ground<br />
+				VA 201, 220-223 1-Day, 2-Day, 3-Day, Ground<br />
+				MD  206, 210-214, 216-219 1-Day, 2-Day, 3-Day, Ground<br />
+				TX 750-769, 790-792 Ground<br />
+				TX AlL (750-789, 790-799, 885) 2-Day, 3-Day<br />
+				CO All (800-816) Ground<br />
+				AZ All (850-865) Ground<br />
+				CA (900-935) Ground<br />
+				HI All (967-968) Ground<br />
+				MS All (386-397) 2-Day<br />
+				ND All (580-588) 2-Day, 3-Day<br />
+				MT All (590-599) 2-Day, 3-Day<br />
+				LA All (700-714) 2-Day<br />
+				AR All (716-729) 2-Day<br />
+				OK All (730-749) 2-Day<br />
+				WY All (820-831) 2-Day, 3-Day<br />
+				ID All (832-838) 2-Day, 3-Day<br />
+				AZ All (850-865) 2-Day, 3-Day<br />
+				NM All (870-884) 2-Day, 3-Day<br />
+				OR All (970-979) 2-Day, 3-Day<br />
+				WA All (980-994) 2-Day, 3-Day<br />
+				ME All (039-049) 3-Day<br />
+				MEX ALL Ground<br />
+			</p>
+		</div>
+		</div>		
+			<paper-shadow class="card" z="3">
+	  &nbsp;
+	  </paper-shadow>
+    </paper-card>
+	
+    <paper-card heading="New Stanton, PA - 1569" headingColor="#EAC117" image="ups_logo.png" style="background-color:#69340f">
+      <div content>
+          <div class="medium"> 
+						<p style="color:#fff">
+
+			PA 150-167 1-Day, 2-Day, 3-Day, Ground<br />
+			MD 215 1-Day, 2-Day, 3-Day, Ground<br />
+			WV 247-253, 255-268 2-Day, 3-Day, Ground<br />
+			KY 400-427 2-Day, 3-Day, Ground<br />
+			OH 430-458 2-Day, 3-Day, Ground<br />
+			IN 460-479 2-Day, 3-Day, Ground<br />
+			MI All (480-499) 3-Day, Ground<br />
+			MI 480-497 2-Day<br />
+			IA ALL (500-528) 3-Day, Ground<br />
+			WI ALL (530-549) 3-Day, Ground<br />
+			MN ALL (550-567) Ground<br />
+			SD ALL (570-577) Ground<br />
+			ND ALL (580-588) Ground<br />
+			MT ALL (590-599) Ground<br />
+			IL ALL (600-629) 2-Day, 3-Day, Ground<br />
+			MO ALL (600-629) 2-Day, 3-Day, Ground<br />
+			KS ALL (600-629) 2-Day, 3-Day, Ground<br />
+			</p>
+		
+		</div>
+		</div>	
+	<paper-shadow class="card" z="3">
+	  &nbsp;
+	  </paper-shadow>		
+    </paper-card>
+	
+	
+	
+	
+	
+	
+	
+	
+<!--
+    <paper-card heading="Titles AND images!" headingColor="#e9005f"
+                    image="http://placehold.it/350x150">
+      <div content>
+        <div>Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+        </div>
+      </div>
+      <div actions>
+        <paper-button dismissive>No</paper-button>
+        <paper-button affirmative autofocus>Yes</paper-button>
+      </div>
+    </paper-card>
+
+    <paper-card heading="Actions can be stacked" headingColor="#e9005f">
+      <div content>
+        <div>Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+        </div>
+      </div>
+      <div actions>
+        <paper-button dismissive>Action</paper-button>
+      </div>
+      <div actions>
+        <paper-button affirmative autofocus>Moar action!</paper-button>
+      </div>
+    </paper-card>
+
+    <paper-card class='fancy'>
+      <div content>
+        <div class="round-placeholder">:)</div>
+        <div class="title">
+         <div class="medium">Lancaster</div>
+          <div class="small"> PA 168-188,195,196 ALL</div>
+		 <div class="small">CAN ALL Ground</div>
+        </div>
+      </div>
+	-->
+      <!-- take this out of the content class so that it can span the whole card -->
+      <!-- 
+	  <img src="http://placehold.it/350x150">
+	
+      <div content>
+        <div class="big">Usu eu novum principes, vel quodsi aliquip ea.</div>
+        <div class="medium">Ut labores minimum atomorum pro. Laudem tibique ut has.</div>
+        <div class="small">No nam ipsum lorem aliquip, accumsan quaerendum ei usu.</div>
+        <div class="small">Usu eu novum principes, vel quodsi aliquip ea.</div>
+      </div>
+    </paper-card>
+	-->
+  </div>
+
+  <script>
+    document.querySelector('#cards').addEventListener('swipeable-card-swipe-away', function(e) {
+      e.target.parentNode.removeChild(e.target);
+    });
+  </script>
+
+</body>
+</html>
