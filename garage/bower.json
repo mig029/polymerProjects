@@ -1,0 +1,23 @@
+{
+  "name": "paper-card",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4",
+    "swipeable-card": "PolymerLabs/swipeable-card#master",
+    "core-icon-button": "Polymer/core-icon-button#master",
+    "paper-button": "Polymer/paper-button#master"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^1.0.0"
+  },
+  "version": "0.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
