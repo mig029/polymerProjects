@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+  <title>paper-card</title>
+<meta name="theme-color" content="#3F51B5">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="../webcomponentsjs/webcomponents.js"></script>
+
+  <link rel="import" href="paper-card.html">
+  <link rel="import" href="../paper-button/paper-button.html">
+  <link rel="import" href="../core-icon-button/core-icon-button.html">
+
+  <style>
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 14px;
+    }
+
+    #cards {
+      margin: 0 auto;
+      background: #dedede;
+      overflow: auto;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
+
+    paper-card {
+      width: 380px;
+      margin: 8px auto;
+    }
+
+    paper-card [autofocus] {
+      color: #ff9c33;
+    }
+
+    paper-button {
+      font-size: 14px;
+    }
+
+    .fancy .round-placeholder {
+      display: inline-block;
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      background: #e9005f;
+      color: white;
+      line-height: 64px;
+      font-size: 30px;
+      text-align: center;
+    }
+	
+	.body{ bgcolor: #e9005f;}
+
+    .fancy .title {
+      position: absolute;
+      top: 30px;
+      left: 100px;
+    }
+
+    .fancy img {
+      width: 100%;
+    }
+
+    .fancy .big {
+      font-size: 22px;
+      padding: 8px 0 16px;
+      color: #888;
+    }
+
+    .fancy .medium {
+      font-size: 16px;
+      padding-bottom: 8px;
+    }
+
+  </style>
+  
+  <script type="text/javascript">
+function garageStatus()
+{
+//document.getElementByClass("body").style.header-color="#aaaaaa";
+}
+
+function garageStatus()
+{
+alert("test");
+}
+</script>
+</head>
+<body unresolved  bgcolor="#dedede">
+
+  <div layout vertical center id="cards">
+
+	<!--
+    <paper-card heading="Not all cards need to be swipeable" disableSwipe></paper-card>
+
+    <paper-card>
+      <div content>
+        <div>Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+        </div>
+      </div>
+      <div actions>
+        <core-icon-button icon="favorite" title="favorite"></core-icon-button>
+        <core-icon-button icon="bookmark" title="bookmark"></core-icon-button>
+        <core-icon-button icon="cloud-upload" title="cloud-upload"></core-icon-button>
+      </div>
+    </paper-card>
+	-->
+	 <paper-shadow class="card" z="0">
+    <paper-card id="toppp" heading="Garage Status: Closed" headingColor="#3F51B5">
+      <div content>
+          <div class="Large"> Door Closed</div>
+		</div>
+		
+	  <paper-shadow class="card" z="3">
+      <div actions>
+        <paper-button  id="toggle">Open/Close</paper-button>
+        <paper-button id="status" autofocus>Check Status</paper-button>
+      </div>
+	  </paper-shadow>
+    </paper-card>
+	</paper-shadow>
+	
+ 
+  </div>
+ <script>
+ function garageStatus()
+{
+alert("test");
+}
+ 
+  var tabs = {
+      status: document.querySelector('#status'),
+      toggle: document.querySelector('#toggle'),
+	  head: document.querySelector('#toppp')
+  };
+
+  tabs.toggle.addEventListener('click', function(e) {
+	if(tabs.head.headingColor == "#3F51B5")
+	{
+		tabs.head.headingColor="#990000";
+		tabs.head.heading="Garage Status: Closed"
+	}
+	else
+	{				
+		tabs.head.headingColor="#3F51B5";
+
+	}
+	
+    console.log(e.type + ' : ' + this.localName);
+  });
+  </script>
+  
+  
+  <script>
+    document.querySelector('#cards').addEventListener('swipeable-card-swipe-away', function(e) {
+      e.target.parentNode.removeChild(e.target);
+    });
+  </script>
+
+</body>
+</html>

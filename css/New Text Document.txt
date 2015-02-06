@@ -1,0 +1,10 @@
+body {
+  display: box;
+  box-orient: horizontal;
+  /* The content of the body is horizontally centered */
+  box-pack: center;
+  /* and vertically as well ... \o/ */
+  box-align: center;
+  width: 100%;
+  height : 100%;
+}
